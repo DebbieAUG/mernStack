@@ -1,24 +1,12 @@
 //4
 import asyncHandler from 'express-async-handler';
 
-// //1 
-
-// //@desc Get all contacts
-// //@route GET /api/contacts
-// //@access Public
-// const getContacts = (req, res) => {
-//   res.status(200).json({message: 'Get all Contacts'});
-// };
-
-//4
 //@desc Get all contacts
 //@route GET /api/contacts
 //@access Public
 const getContacts = asyncHandler(
     async (req, res) => {res.status(200).json({message: 'Get all Contacts'});
 });
-
-// 2
 
 //@desc Create contact
 //@route POST /api/contacts
@@ -56,8 +44,6 @@ const deleteContact = asyncHandler(
     async (req, res) => {res.status(200).json({message: `Delecte Contact for ${req.params.id}`});
 });
 
-
-//1
 export {
     getContacts,
     createContact,
