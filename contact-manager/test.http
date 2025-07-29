@@ -1,19 +1,18 @@
-# GET http://localhost:5000/api/contacts
+GET http://localhost:5001/api/contacts
 
-#2
-POST http://localhost:5000/api/contacts
-# 3 pass value in body
-Content-Type: application/json
 
-{
-  "name": "John Doe",
-  "email": "j.doe@gmail.com",
-  "phone": "1234567890"
-}
+# POST http://localhost:5001/api/contacts
+# Content-Type: application/json
 
-# PUT http://localhost:5000/api/contacts/123
+# {
+#   "name": "John Doe",
+#   "email": "j.doe@gmail.com",
+#   "phone": "1234567890"
+# }
 
-# GET http://localhost:5000/api/contacts/123
+# PUT http://localhost:5001/api/contacts/123
 
-# DELETE http://localhost:5000/api/contacts/123
+# GET http://localhost:5001/api/contacts/123
+
+# DELETE http://localhost:5001/api/contacts/6888ebc1f75f46fcae87327b
 
