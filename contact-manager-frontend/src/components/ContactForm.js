@@ -10,7 +10,7 @@ function ContactForm({ onContactAdded }) {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    await axios.post('http://localhost:5001/api/contacts', form);
+    await axios.post('https://jubilant-umbrella-xx4w7jr7v4q2p9qg-5001.app.github.dev/api/contacts', form);
     setForm({ name: '', email: '', phone: '' });
     onContactAdded();
   };

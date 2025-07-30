@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function ContactItem({ contact, onContactChanged }) {
   const handleDelete = async () => {
-    await axios.delete(`http://localhost:5001/api/contacts/${contact._id}`);
+    await axios.delete(`https://jubilant-umbrella-xx4w7jr7v4q2p9qg-5001.app.github.dev/api/contacts/${contact._id}`);
     onContactChanged();
   };
 
